@@ -5,7 +5,7 @@
 
 #define BOT_USER "emoji-bot"
 
-#define NUM_EMOJIS 5
+#define NUM_EMOJIS 9
 
 char *emojis[NUM_EMOJIS];
 char *emoji_names[NUM_EMOJIS];
@@ -15,10 +15,14 @@ char *emoji_names[NUM_EMOJIS];
 #define EMOJI_OPEN_MOUTH 2
 #define EMOJI_DIZZY 3
 #define EMOJI_KISS 4
+#define EMOJI_RELIEVED 5
+#define EMOJI_SHRUG 6
+#define EMOJI_ASTONISHED 7
+#define EMOJI_UNAMUSED 8
 
 void init_emojis()
 {
-	emojis[EMOJI_SLEEPING] =   "(, - .-) zZ";
+	emojis[EMOJI_SLEEPING] =   "( ᴗ˳ᴗ) zZ";
 	emoji_names[EMOJI_SLEEPING] = ":sleeping:";
 
 	emojis[EMOJI_SMILE] =      "(, ^ .^)";
@@ -30,8 +34,20 @@ void init_emojis()
 	emojis[EMOJI_DIZZY] =      "(, x .x)";
 	emoji_names[EMOJI_DIZZY] =      ":dizzy:";
 
-	emojis[EMOJI_KISS] =      "(, ^ 3^)";
+	emojis[EMOJI_KISS] =      "( ˘³˘)";
 	emoji_names[EMOJI_KISS] =      ":kiss:";
+
+	emojis[EMOJI_RELIEVED] =      "( ˘ω˘)";
+	emoji_names[EMOJI_RELIEVED] =      ":relieved:";
+
+	emojis[EMOJI_SHRUG] =      "┐(￣ε￣)┌";
+	emoji_names[EMOJI_SHRUG] =      ":shrug:";
+
+	emojis[EMOJI_ASTONISHED] =      "( ◎ ˳◎)";
+	emoji_names[EMOJI_ASTONISHED] =      ":astonished:";
+
+	emojis[EMOJI_UNAMUSED] =      "( ¬､¬)";
+	emoji_names[EMOJI_UNAMUSED] =      ":unamused:";
 }
 
 void usage()
