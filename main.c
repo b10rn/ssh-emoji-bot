@@ -145,7 +145,7 @@ int main(int argc, char *argv[])
 
 	int write_emoji = -1;
 	while (ssh_channel_is_open(channel) && !ssh_channel_is_eof(channel)) {
-		nbytes = ssh_channel_read_nonblocking(channel, buffer, sizeof(buffer) - 1, 0);
+		nbytes = ssh_channel_read(channel, buffer, sizeof(buffer) - 1, 0);
 		if (nbytes > 0) {
 			buffer[nbytes] = '\0';
 			printf("read message '%s'\n", buffer);
